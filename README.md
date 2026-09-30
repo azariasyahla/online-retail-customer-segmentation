@@ -1,6 +1,6 @@
 # Online Retail Customer Segmentation
 
-A consolidated portfolio version of two business analytics coursework notebooks: `clustering_bisdig.ipynb` and `bisdigkelompok_6.ipynb`. Both use the same Online Retail transactions and pursue the same customer segmentation question. This repo combines their shared **RFM → clustering → segment profiling** workflow into one reproducible notebook.
+A customer segmentation project using the Online Retail transaction dataset. The analysis builds **RFM features**, compares clustering choices, and profiles customer groups to support clearer business decisions.
 
 ## What it does
 
@@ -10,7 +10,7 @@ A consolidated portfolio version of two business analytics coursework notebooks:
 4. Profiles each cluster's size, average RFM, and share of transaction revenue.
 5. Inspects DBSCAN cluster and noise counts across three nearby `eps` settings.
 
-The original notebooks covered **541,909 transaction lines** before filtering and **4,338 customer records** in their saved outputs. They were exploratory and used different feature sets and numbers of clusters; their labels and numerical summaries should not be combined directly. One original K-Means result contained a cluster of only **two customers**. This rewritten notebook recalculates its own results and does not claim the original cluster assignments.
+The source dataset contains **541,909 transaction records**. The notebook filters invalid transactions and calculates customer-level features before clustering. Cluster counts and scores are generated when the notebook runs; the README does not claim results from a different experiment.
 
 ## Data source and attribution
 
